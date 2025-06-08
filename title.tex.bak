@@ -1,0 +1,40 @@
+\begin{titlepage}
+\begin{center}
+
+\textup{\small {\bf First year of Master's Internship} \\ Report}\\[2cm]
+
+% Title
+\LARGE \textbf {Nuclear energy for space exploration : \\
+A technological necessity or a risky gamble for humanity and the wider environment ?}\\[3cm]
+
+
+
+       
+
+% Submitted by
+\normalsize Submitted by \\[0.2cm]
+\textbf{S. Bourgeois}\\
+M1 PFA\\
+\vspace{0.5cm}
+Under the guidance of\\[0.2cm]
+\textbf{S. Porteboeuf-Houssais, J. Donini}\\
+Profs.
+
+
+
+\vspace{1cm}
+
+% Bottom of the page
+\includegraphics[width=0.2\textwidth]{UCA-logo.png}\\[0.5cm]
+\Large{Department of Physics}\\
+\normalsize
+\textsc{Université Clermont Auvergne}\\
+4 Avenue Blaise Pascal\\
+63178 Aubière\\
+\vspace{0.2cm}
+11th of June 2025
+
+\end{center}
+
+\end{titlepage}
+\newpage

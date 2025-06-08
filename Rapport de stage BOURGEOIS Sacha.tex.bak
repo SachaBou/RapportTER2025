@@ -1,0 +1,112 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\author{S. Bourgeois}
+
+
+\begin{document}
+
+\input{title}
+\input{acknowledgment}
+\input{foreword}
+
+\tableofcontents
+
+\chapter*{Introduction}
+% 	states your hypothesis 	explains how you derived that hypothesis and how it connects to previous research; gives the purpose of the experiment/study
+
+\quad In this report we will study the following question : \\
+"Nuclear energy for space exploration: A technological necessity or a risky gamble for humanity and the wider environment ?".\\
+
+We will assume the role of Elon Musk, CEO of Space X a space technology company whose objective it will be to send a team of astronauts to the planet Mars and whose questionable ethics will lead us at the limit of what is considered acceptable in terms of radiation exposure, in opposition to NASA moto "as safe as possible" we would follow Elon's "move fast, break things".\\
+For this purpose we will study nuclear propulsion to show it is superior to classical means of propulsion on a trip to Mars, as well as radiation shielding and why it would be necessary for such a mission.\\
+
+We will show that, assuming today's technology, it is quite unrealistic to propel a crew of four to Mars and back using anything else than a NTR and will try to show how nuclear energy and fissile materials can be used quite safely in the context of space propulsion. We will also show how much weight can be saved on shielding while still keeping the astronauts alive and healthy for the duration of the flight.
+
+This report is heavily based on a 1997 book by Stephen J. Hoffman and David I. Kaplan at Johnson Space Center \cite{Hoffman1997}.
+
+\addcontentsline{toc}{chapter}{Introduction}
+
+\chapter{Methods}
+%details how you tested your hypothesis 	clarifies why you performed your study in that particular way
+
+\section{Nuclear Propulsion}
+\subsection{Specific Impulse}
+Specific impulse is a measure of how efficiently a reaction mass engine generates thrust.\\
+It can be derived from the rocket thrust equation given by :
+\begin{equation}
+F = \dot{m}v_e + (p_e - p_0)A_e 
+\end{equation}
+Where $p_e$ and $p_0$ are respectively the pressure of the exhaust and of the atmosphere, $v_e$ is the speed of the exhaust, $A_e$ is the area of the exhaust, $\dot{m}$ is the mass flow rate and $F$ is the thrust.\\
+From which can be defined the equivalent velocity:
+$$V_{eq}=v_e+\frac{(p_e-p_0)A_e}{\dot{m}}$$
+As well as the total impulse:
+$$I=F\Delta t = \int F dt = \int \dot{m}v_{e}dt=mv_{e}$$
+Which allows us to finally define the specific impulse:
+\begin{equation}
+I_{sp}=\frac{I}{mg_0}=\frac{v_{e}}{g_0}=\frac{F}{\dot{m}g_0}
+\end{equation}
+Where $g_0$ is the gravity acceleration at sea level.
+\newpage
+\subsection{Rocket Equation}
+
+The Tsiolkovsky rocket equation also known as the ideal rocket equation defined as follows: 
+\begin{equation}
+\Delta v=v_e\ln\frac{m_0}{m_f}=I_{sp}g_0\ln\frac{m_0}{m_f}
+\end{equation}
+With $m_0$ the initial mass of the rocket and $m_f$ the final mass of the rocket.
+Given an effective exhaust velocity this equation allows us to find how much propellant mass is needed for a given change in velocity.
+\subsection{$\Delta v$ Budget}
+The concept of $\Delta v$ budget is an estimate of the total change of velocity required to perform each propulsive maneuver over the duration of a given mission this quantity can then be used as described in 1.1.2.\\
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=.2]{img/dv.png}
+\caption{Delta-v map, assuming burns at periapsis, gravity assist, and ignoring inclination changes}
+\end{figure}
+
+For an Earth-Mars trip, a conservative estimate is located around $18000m.s^{-1}$, it is important to note that even though we could save up on fuel by using more efficient transfer techniques this would also come at the expanse of travel time, which, we will see, becomes a major hurdle of space travel. On the other hand aerobreaking is an option both on Earth and Mars and should be fully utilized to save up on fuel.
+\newpage
+\subsection{NTR}
+Solid core nuclear thermal rockets, such as the NERVA-XE, make use of highly enriched U-235 fission reactor through which liquid hydrogen is passed serving as both coolant and propellant\cite{Finseth1991} as well as a good radiation shield.
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=.7]{img/NERVA-solid-core-nuclear-propulsion-system.png}
+\caption{NERVA solid core nuclear propulsion system. Source:
+NASA.}
+\end{figure}
+Liquid hydrogen is a propellant of choice due to its low molecular weight, which allows for high $I_{sp}$ as well as its low neutron absorbing cross section. Solid core design operate at around 2000°C which in conjunction with the use of hydrogen yield specific impulses approaching 1000s. The design is limited by the containment chamber's wall melting. Some newer design, such as gas core NTRs could yield specific impulses around the 3000s mark.
+\begin{Huge}
+Inserer tableau Yvon
+\end{Huge}
+
+
+\newpage
+\section{Shielding}
+\subsection{Radiation in Space}
+Astronauts are exposed to higher doses of radiation in space mainly due to the lack of a magnetosphere and an atmosphere shielding them from SEP and GCR, the two main types of radiations in space. This effect grows stronger as you get further away from the earth as its magnetosphere grows weaker the further away one gets from it.
+The 
+
+\chapter{Results}
+%provides raw (i.e., uninterpreted) data collected 	(perhaps) expresses the data in table form, as an easy-to-read figure, or as percentages/ratios
+
+\section{Nuclear Propulsion}
+\section{Shielding}
+
+
+\chapter{Discussion}
+% 	considers whether the data you obtained support the hypothesis 	explores the implications of your finding and judges the potential limitations of your experimental design
+
+
+\input{acronyms}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
