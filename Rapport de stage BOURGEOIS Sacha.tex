@@ -2,17 +2,32 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage[left=2.5cm,right=2.5cm]{geometry}
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{caption}
 
 \author{S. Bourgeois}
 
 
 \begin{document}
+
+\bibliographystyle{plain}
+
+\pagestyle{fancy}
+
+\fancyhead{} % clear all header fields
+\fancyhead[L]{\small Nuclear energy for space exploration: A technological necessity \\ or a risky gamble for humanity and the wider environment ?}
+\fancyhead[R]{\small BOURGEOIS Sacha\\
+2025}
+\fancyfoot{} % clear all footer fields
 
 \input{title}
 \input{acknowledgment}
@@ -20,7 +35,9 @@
 
 \tableofcontents
 
+
 \chapter*{Introduction}
+
 % 	states your hypothesis 	explains how you derived that hypothesis and how it connects to previous research; gives the purpose of the experiment/study
 
 \quad In this report we will study the following question : \\
@@ -36,7 +53,7 @@ This report is heavily based on a 1997 book by Stephen J. Hoffman and David I. K
 \addcontentsline{toc}{chapter}{Introduction}
 
 \chapter{Methods}
-%details how you tested your hypothesis 	clarifies why you performed your study in that particular way
+%details how you tested your hypothesis clarifies why you performed your study in that particular way
 
 \section{Nuclear Propulsion}
 \subsection{Specific Impulse}
@@ -60,9 +77,9 @@ Where $g_0$ is the gravity acceleration at sea level.
 
 The Tsiolkovsky rocket equation also known as the ideal rocket equation defined as follows: 
 \begin{equation}
-\Delta v=v_e\ln\frac{m_0}{m_f}=I_{sp}g_0\ln\frac{m_0}{m_f}
+\Delta v=v_e\ln\left(\frac{m_0}{m_f}\right)=I_{sp}g_0\ln\left(\frac{m_p}{m_f}+1\right)
 \end{equation}
-With $m_0$ the initial mass of the rocket and $m_f$ the final mass of the rocket.
+With $m_0$ the initial mass of the rocket, also known as wet mass, $m_f$ the final mass, or dry mass, of the rocket, and $m_p$ the mass of the propellant.
 Given an effective exhaust velocity this equation allows us to find how much propellant mass is needed for a given change in velocity.
 \subsection{$\Delta v$ Budget}
 The concept of $\Delta v$ budget is an estimate of the total change of velocity required to perform each propulsive maneuver over the duration of a given mission this quantity can then be used as described in 1.1.2.\\
@@ -75,24 +92,87 @@ The concept of $\Delta v$ budget is an estimate of the total change of velocity 
 For an Earth-Mars trip, a conservative estimate is located around $18000m.s^{-1}$, it is important to note that even though we could save up on fuel by using more efficient transfer techniques this would also come at the expanse of travel time, which, we will see, becomes a major hurdle of space travel. On the other hand aerobreaking is an option both on Earth and Mars and should be fully utilized to save up on fuel.
 \newpage
 \subsection{NTR}
-Solid core nuclear thermal rockets, such as the NERVA-XE, make use of highly enriched U-235 fission reactor through which liquid hydrogen is passed serving as both coolant and propellant\cite{Finseth1991} as well as a good radiation shield.
+Solid core nuclear thermal rockets, such as the NERVA-XE, make use of highly enriched U-235 fission reactor through which liquid hydrogen is passed serving as both coolant and propellant \cite{Finseth1991} as well as a good radiation shield.
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=.7]{img/NERVA-solid-core-nuclear-propulsion-system.png}
 \caption{NERVA solid core nuclear propulsion system. Source:
 NASA.}
 \end{figure}
-Liquid hydrogen is a propellant of choice due to its low molecular weight, which allows for high $I_{sp}$ as well as its low neutron absorbing cross section. Solid core design operate at around 2000°C which in conjunction with the use of hydrogen yield specific impulses approaching 1000s. The design is limited by the containment chamber's wall melting. Some newer design, such as gas core NTRs could yield specific impulses around the 3000s mark.
-\begin{Huge}
-Inserer tableau Yvon
-\end{Huge}
+%Liquid hydrogen is a propellant of choice due to its low molecular weight, which allows for high $I_{sp}$ as well as its low neutron absorbing cross section. Solid core design operate at around 2000°C which in conjunction with the use of hydrogen yield specific impulses approaching 1000s. The design is limited by the containment chamber's wall melting. Some newer design, such as gas core NTRs could yield specific impulses in the 3000s.
 
+
+\section{Shielding}
+Astronauts are exposed to higher doses of radiation in space mainly due to the lack of a magnetosphere and an atmosphere shielding them from SEP and GCR, the two main types of radiations in space. The dose grows stronger as one gets further away from the earth as its magnetosphere grows weaker the further away one gets from it.\\
+The unprotected human body is quite weak to radiation, especially ionizing radiations and although the legislation is lacking for space workers the IAEA, specifies a dose of $20mSv$ per year averaged over five consecutive years (100 mSv in 5 years) and of $50mSv$ in any single year \cite{IAEA-GSG}, for occupational workers. A quantity well under was is proposed by \cite{Hoffman1997} as can be observed in figure 1.3.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=.5]{img/extrapo.png}
+\caption{Mission Exposures derived by Scaling Daily Values from Figure 1.4 by Corresponding Mission Segment Durations, from \cite{Hoffman1997}}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=.5]{img/data.png}
+\caption{Daily Exposure within 0, 20, and 40 g/cm2 Spherical Aluminum Shielding in Free Space and on Surface of Moon and Mars for Solar Minimum (2009) and Solar Maximum (2001) GCR Conditions, from \cite{Hoffman1997}}
+\end{figure}
 
 \newpage
-\section{Shielding}
+
 \subsection{Radiation in Space}
-Astronauts are exposed to higher doses of radiation in space mainly due to the lack of a magnetosphere and an atmosphere shielding them from SEP and GCR, the two main types of radiations in space. This effect grows stronger as you get further away from the earth as its magnetosphere grows weaker the further away one gets from it.
-The 
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{img/Major characteristics of SEPs GCRs and trapped particle radiation.jpg}
+\caption{Major characteristics of SEPs, GCRs, and trapped particle radiation. Images courtesy of NASA Scientific Visualization Studio. SEP image credit: NASA’s Goddard Space
+Flight Center Conceptual Image Lab, GCR image credit: NASA/STScI/CXC/SAO, processing by Judy Schmidt, CC BY-NC-SA, Trapped image credit: NASA’s Scientific Visualization
+Studio.}
+\end{figure}
+
+
+
+
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\includegraphics[scale=.4]{img/optimised traj.png}
+\captionof{figure}{Typical fast-transit trajectory courtesy of \cite{Hoffman1997}}
+\end{minipage} 
+\hfill
+\begin{minipage}[b]{0.35\linewidth}
+In space, astronauts are exposed to three main kind of radiation environments, SEP, GCR and trapped radiations. For our purpose we will mainly focus on SEP and GCR radiations as the time spent around the earth and in the Van-Allen belt will be insignificant compared to the whole duration of the mission as highlighted in figure 1.6.
+\end{minipage}
+
+\newpage
+
+
+
+\begin{minipage}[b]{0.3\linewidth}
+\subsubsection{SEPs}
+SEP are high energy charged particles originating in the solar atmosphere and transported by solar winds. They are mostly composed of high energy protons as reported in \cite{Jiggens2019}. Figure 1.7 shows the energy spectra from the 1989 solar event that resulted in a complete blackout of Hydro-Québec's power grid.
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.6\linewidth}
+\centering
+\includegraphics[scale=.3]{img/proton flux 1989.png}
+\captionof{figure}{9-13th of March 1989 Solar storm}
+\end{minipage} \\
+\hfill\\
+
+
+
+\begin{minipage}[b]{0.55\linewidth}
+\centering
+\includegraphics[scale=.25]{img/Cosmic_ray_flux_versus_particle_energy.svg.png}
+\captionof{figure}{Cosmic flux versus particle energy at the top of Earth's atmosphere \cite{Sharma2008}}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.35\linewidth}
+\subsubsection{GCRs}
+CGR are high energy particles mostly composed of protons and HZE ions, some of them come from our sun but from our galaxy and other galaxies as well. The bulk of the flux is deflected to space by the heliosphere. Therefor, the solar cycle and thus the strength of the sun's magnetic sphere has a major influence on the influx of GCRs.
+Solar maximums and minimums, the time where the sun's activity is respectively at its maximum and its minimum will play a big role in how we deal with GCRs.
+\end{minipage}
+
 
 \chapter{Results}
 %provides raw (i.e., uninterpreted) data collected 	(perhaps) expresses the data in table form, as an easy-to-read figure, or as percentages/ratios
@@ -107,6 +187,5 @@ The
 
 \input{acronyms}
 
-\bibliographystyle{plain}
 \bibliography{references}
 \end{document}

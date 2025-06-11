@@ -1,9 +1,14 @@
 \begin{thebibliography}{1}
 
+\bibitem{IAEA-GSG}
+International atomic~energy agency and international~labour office.
+\newblock Occupational radiation protection general safety guide.
+\newblock {\em IAEA safety standards series no. GSG-7, IAEA, Vienna}, 2018.
+
 \bibitem{Finseth1991}
 JL~Finseth.
 \newblock Rover nuclear rocket engine program: Overview of rover engine tests.
-\newblock 1991.
+\newblock Technical report, NASA (Sverdrup Technology), 1991.
 
 \bibitem{Hoffman1997}
 Stephen~J Hoffman.
@@ -11,5 +16,17 @@ Stephen~J Hoffman.
   Mars exploration study team}, volume 6107.
 \newblock National Aeronautics and Space Administration, Lyndon B. Johnson
   Space Center, 1997.
+
+\bibitem{Jiggens2019}
+Piers Jiggens, C~Clavie, H~Evans, TP~O'Brien, O~Witasse, AL~Mishev, Petteri
+  Nieminen, E~Daly, V~Kalegaev, N~Vlasova, et~al.
+\newblock In situ data and effect correlation during september 2017 solar
+  particle event.
+\newblock {\em Space Weather}, 17(1):99--117, 2019.
+
+\bibitem{Sharma2008}
+Shatendra~K Sharma et~al.
+\newblock {\em Atomic and nuclear physics}.
+\newblock Pearson Education India, 2008.
 
 \end{thebibliography}
