@@ -1,0 +1,97 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baumstark-Khan(2002)]{baumstark2002life}
+Baumstark-Khan.
+\newblock Life under conditions of ionizing radiation.
+\newblock In \emph{Astrobiology: the quest for the conditions of life}, pages
+  261--284. Springer, 2002.
+
+\bibitem[Berge(2017)]{STAR}
+Berge.
+\newblock Stopping-power \& range tables for electrons, protons, and helium
+  ions. 2017.
+\newblock \emph{NIST Standard Reference Database}, 124, 2017.
+\newblock https://physics.nist.gov/PhysRefData/Star/Text/intro.html.
+
+\bibitem[Cucinotta(2009)]{cucinotta2009}
+Cucinotta.
+\newblock Risk of radiation carcinogenesis.
+\newblock \emph{Human health and performance risks of space exploration
+  missions. NASA SP-2009-3405. Houston: National Aeronautics and Space
+  Administration}, pages 119--170, 2009.
+
+\bibitem[Deasy(1994)]{deasy1994icru}
+Deasy.
+\newblock Icru report 49, stopping powers and ranges for protons and alph
+  particles, 1994.
+
+\bibitem[Finseth(1991)]{finseth1991}
+Finseth.
+\newblock Rover nuclear rocket engine program: Overview of rover engine tests.
+\newblock Technical report, NASA (Sverdrup Technology), 1991.
+
+\bibitem[Groom(2000)]{groom2000passage}
+Groom.
+\newblock Passage of particles through matter.
+\newblock \emph{The European Physical Journal C-Particles and Fields},
+  15\penalty0 (1-4):\penalty0 163--173, 2000.
+
+\bibitem[Hoffman(1997)]{hoffman1997}
+Hoffman.
+\newblock \emph{Human exploration of Mars: the reference mission of the NASA
+  Mars exploration study team}, volume 6107.
+\newblock National Aeronautics and Space Administration, Lyndon B. Johnson
+  Space Center, 1997.
+
+\bibitem[IAEA(2018)]{IAEA-GSG}
+IAEA.
+\newblock Occupational radiation protection general safety guide.
+\newblock \emph{IAEA safety standards series no. GSG-7, IAEA, Vienna}, 2018.
+
+\bibitem[ICRP(2007{\natexlab{a}})]{protection2007icrp}
+ICRP.
+\newblock The 2007 recommendations of the international commission on
+  radiological protection.
+\newblock \emph{Ann ICRP}, 37\penalty0 (2.4):\penalty0 2, 2007{\natexlab{a}}.
+
+\bibitem[ICRP(2007{\natexlab{b}})]{valentin20072007}
+ICRP.
+\newblock \emph{The 2007 recommendations of the international commission on
+  radiological protection}, volume~37.
+\newblock Elsevier Oxford, 2007{\natexlab{b}}.
+
+\bibitem[Jiggens(2019)]{jiggens2019}
+Jiggens.
+\newblock In situ data and effect correlation during september 2017 solar
+  particle event.
+\newblock \emph{Space Weather}, 17\penalty0 (1):\penalty0 99--117, 2019.
+
+\bibitem[McLaren(2010)]{mclaren2010}
+McLaren.
+\newblock Nuclear propulsion choices for space exploration.
+\newblock In \emph{2010 1st International Nuclear \& Renewable Energy
+  Conference (INREC)}, pages 1--7. IEEE, 2010.
+
+\bibitem[Sharma(2008)]{sharma2008}
+Sharma.
+\newblock \emph{Atomic and nuclear physics}.
+\newblock Pearson Education India, 2008.
+
+\bibitem[Sreedevi(2025)]{sreedevi2025effectiveness}
+Sreedevi.
+\newblock Effectiveness of multi-layered radiation shields constructed from
+  polyethylene and metal hydrides using hzetrn and oltaris for space
+  applications.
+\newblock \emph{Journal of Space Science and Technology}, 2025.
+
+\bibitem[Valinia(2022)]{valinia2022safe}
+Valinia.
+\newblock Safe human expeditions beyond low earth orbit (leo).
+\newblock Technical report, NASA, Langley Research Center, 2022.
+
+\end{thebibliography}

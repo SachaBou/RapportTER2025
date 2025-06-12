@@ -1,4 +1,4 @@
-@book{Hoffman1997,
+@book{hoffman1997,
   title={Human exploration of Mars: the reference mission of the NASA Mars exploration study team},
   author={Hoffman, Stephen J},
   volume={6107},
@@ -6,7 +6,7 @@
   publisher={National Aeronautics and Space Administration, Lyndon B. Johnson Space Center}
 }
 
-@TechReport{Finseth1991,
+@TechReport{finseth1991,
 author = {Finseth, JL},
 title = {Rover nuclear rocket engine program: Overview of rover engine tests},
 institution = {NASA (Sverdrup Technology)},
@@ -14,7 +14,7 @@ year={1991}
 }
 
 
-@inproceedings{McLaren2010,
+@inproceedings{mclaren2010,
   title={Nuclear Propulsion choices for space exploration},
   author={McLaren, Ryan and Ragheb, Magdi},
   booktitle={2010 1st International Nuclear \& Renewable Energy Conference (INREC)},
@@ -30,7 +30,7 @@ year={1991}
   year={2018}
 }
 
-@article{Cucinotta2009,
+@article{cucinotta2009,
   title={Risk of radiation carcinogenesis},
   author={Cucinotta, Francis A and Durante, Marco},
   journal={Human health and performance risks of space exploration missions. NASA SP-2009-3405. Houston: National Aeronautics and Space Administration},
@@ -38,7 +38,7 @@ year={1991}
   year={2009}
 }
 
-@article{Jiggens2019,
+@article{jiggens2019,
   title={In situ data and effect correlation during September 2017 solar particle event},
   author={Jiggens, Piers and Clavie, C and Evans, H and O'Brien, TP and Witasse, O and Mishev, AL and Nieminen, Petteri and Daly, E and Kalegaev, V and Vlasova, N and others},
   journal={Space Weather},
@@ -49,7 +49,7 @@ year={1991}
   publisher={Wiley Online Library}
 }
 
-@book{Sharma2008,
+@book{sharma2008,
   title={Atomic and nuclear physics},
   author={Sharma, Shatendra K and others},
   year={2008},
@@ -104,7 +104,19 @@ note = {https://physics.nist.gov/PhysRefData/Star/Text/intro.html},
   title={The 2007 recommendations of the international commission on radiological protection},
   author={ICRP},
   volume={37},
-  number={2-4},
   year={2007},
   publisher={Elsevier Oxford}
+}
+
+@article{sreedevi2025effectiveness,
+  title={Effectiveness of Multi-Layered Radiation Shields Constructed from Polyethylene and Metal Hydrides Using HZETRN and OLTARIS for Space Applications},
+  author={Sreedevi, VV and Lalwani, Kavita},
+  year={2025},
+  journal={Journal of Space Science and Technology}
+}
+
+@techreport{valinia2022safe,
+  title={Safe human expeditions beyond low Earth orbit (LEO)},
+  author={Valinia, Azita and Allen, John R and Francisco, David R and Minow, Joseph I and Pellish, Jonathan A and Vera, Alonso H},
+  year={2022}
 }
