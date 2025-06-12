@@ -1,48 +1,51 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Rapport de stage BOURGEOIS Sacha.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
-The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: abbrvnat.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-You've used 5 entries,
-            2118 wiz_defined-function locations,
-            531 strings with 4994 characters,
-and the built_in function-call counts, 1530 in all, are:
-= -- 138
-> -- 98
-< -- 1
-+ -- 39
-- -- 34
-* -- 104
-:= -- 285
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 29
-chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 53
-empty$ -- 103
-format.name$ -- 34
-if$ -- 300
-int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 6
-newline$ -- 28
-num.names$ -- 10
-pop$ -- 34
+Warning--can't use both volume and number fields in valentin20072007
+Warning--empty year in STAR
+You've used 11 entries,
+            2773 wiz_defined-function locations,
+            663 strings with 6300 characters,
+and the built_in function-call counts, 4402 in all, are:
+= -- 377
+> -- 233
+< -- 13
++ -- 83
+- -- 72
+* -- 304
+:= -- 698
+add.period$ -- 34
+call.type$ -- 11
+change.case$ -- 53
+chr.to.int$ -- 11
+cite$ -- 24
+duplicate$ -- 218
+empty$ -- 381
+format.name$ -- 88
+if$ -- 917
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 11
+newline$ -- 63
+num.names$ -- 44
+pop$ -- 129
 preamble$ -- 1
-purify$ -- 25
+purify$ -- 44
 quote$ -- 0
-skip$ -- 36
+skip$ -- 167
 stack$ -- 0
-substring$ -- 47
-swap$ -- 5
-text.length$ -- 1
+substring$ -- 104
+swap$ -- 22
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
-warning$ -- 0
-while$ -- 12
-width$ -- 6
-write$ -- 55
+type$ -- 106
+warning$ -- 2
+while$ -- 41
+width$ -- 0
+write$ -- 146
+(There were 2 warnings)

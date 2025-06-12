@@ -5,6 +5,7 @@
 \usepackage[left=2.5cm,right=2.5cm]{geometry}
 
 \usepackage{amsmath}
+\usepackage{blindtext}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -13,13 +14,16 @@
 \usepackage{wrapfig}
 \usepackage{lipsum}
 \usepackage{caption}
+\usepackage{natbib}
+\usepackage[pagebackref]{hyperref}
 
 \author{S. Bourgeois}
 
 
 \begin{document}
 
-\bibliographystyle{plain}
+\bibliographystyle{abbrvnat}
+\setcitestyle{open={(},author,year,close={)}} %Citation-related commands
 
 \pagestyle{fancy}
 
@@ -28,6 +32,7 @@
 \fancyhead[R]{\small BOURGEOIS Sacha\\
 2025}
 \fancyfoot{} % clear all footer fields
+\fancyfoot[C]{\thepage}
 
 \input{title}
 \input{acknowledgment}
@@ -48,7 +53,7 @@ For this purpose we will study nuclear propulsion to show it is superior to clas
 
 We will show that, assuming today's technology, it is quite unrealistic to propel a crew of four to Mars and back using anything else than a NTR and will try to show how nuclear energy and fissile materials can be used quite safely in the context of space propulsion. We will also show how much weight can be saved on shielding while still keeping the astronauts alive and healthy for the duration of the flight.
 
-This report is heavily based on a 1997 book by Stephen J. Hoffman and David I. Kaplan at Johnson Space Center \cite{Hoffman1997}.
+This report is heavily based on a 1997 book by Stephen J. Hoffman and David I. Kaplan at Johnson Space Center \citep{Hoffman1997}.
 
 \addcontentsline{toc}{chapter}{Introduction}
 
@@ -79,7 +84,7 @@ The Tsiolkovsky rocket equation also known as the ideal rocket equation defined 
 \begin{equation}
 \Delta v=v_e\ln\left(\frac{m_0}{m_f}\right)=I_{sp}g_0\ln\left(\frac{m_p}{m_f}+1\right)
 \end{equation}
-With $m_0$ the initial mass of the rocket, also known as wet mass, $m_f$ the final mass, or dry mass, of the rocket, and $m_p$ the mass of the propellant.
+Where $m_0$ the initial mass of the rocket, also known as wet mass, $m_f$ the final mass, or dry mass, of the rocket, and $m_p$ the mass of the propellant.
 Given an effective exhaust velocity this equation allows us to find how much propellant mass is needed for a given change in velocity.
 \subsection{$\Delta v$ Budget}
 The concept of $\Delta v$ budget is an estimate of the total change of velocity required to perform each propulsive maneuver over the duration of a given mission this quantity can then be used as described in 1.1.2.\\
@@ -92,35 +97,30 @@ The concept of $\Delta v$ budget is an estimate of the total change of velocity 
 For an Earth-Mars trip, a conservative estimate is located around $18000m.s^{-1}$, it is important to note that even though we could save up on fuel by using more efficient transfer techniques this would also come at the expanse of travel time, which, we will see, becomes a major hurdle of space travel. On the other hand aerobreaking is an option both on Earth and Mars and should be fully utilized to save up on fuel.
 \newpage
 \subsection{NTR}
-Solid core nuclear thermal rockets, such as the NERVA-XE, make use of highly enriched U-235 fission reactor through which liquid hydrogen is passed serving as both coolant and propellant \cite{Finseth1991} as well as a good radiation shield.
+Solid core nuclear thermal rockets, such as the NERVA-XE, make use of highly enriched U-235 fission reactor through which liquid hydrogen is passed serving as both coolant and propellant \citep{Finseth1991} as well as a good radiation shield.
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=.7]{img/NERVA-solid-core-nuclear-propulsion-system.png}
 \caption{NERVA solid core nuclear propulsion system. Source:
 NASA.}
 \end{figure}
-%Liquid hydrogen is a propellant of choice due to its low molecular weight, which allows for high $I_{sp}$ as well as its low neutron absorbing cross section. Solid core design operate at around 2000°C which in conjunction with the use of hydrogen yield specific impulses approaching 1000s. The design is limited by the containment chamber's wall melting. Some newer design, such as gas core NTRs could yield specific impulses in the 3000s.
 
 
-\section{Shielding}
-Astronauts are exposed to higher doses of radiation in space mainly due to the lack of a magnetosphere and an atmosphere shielding them from SEP and GCR, the two main types of radiations in space. The dose grows stronger as one gets further away from the earth as its magnetosphere grows weaker the further away one gets from it.\\
-The unprotected human body is quite weak to radiation, especially ionizing radiations and although the legislation is lacking for space workers the IAEA, specifies a dose of $20mSv$ per year averaged over five consecutive years (100 mSv in 5 years) and of $50mSv$ in any single year \cite{IAEA-GSG}, for occupational workers. A quantity well under was is proposed by \cite{Hoffman1997} as can be observed in figure 1.3.
 
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=.5]{img/extrapo.png}
-\caption{Mission Exposures derived by Scaling Daily Values from Figure 1.4 by Corresponding Mission Segment Durations, from \cite{Hoffman1997}}
-\end{figure}
-
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=.5]{img/data.png}
-\caption{Daily Exposure within 0, 20, and 40 g/cm2 Spherical Aluminum Shielding in Free Space and on Surface of Moon and Mars for Solar Minimum (2009) and Solar Maximum (2001) GCR Conditions, from \cite{Hoffman1997}}
-\end{figure}
 
 \newpage
 
-\subsection{Radiation in Space}
+\section{Radiations in Space}
+
+
+\subsection{Shielding}
+Astronauts are exposed to higher doses of radiation in interplanetary space mainly due to the lack of a magnetosphere and an atmosphere shielding them from SEP and GCR, the two main types of radiations they would be exposed to for an inter-planetary journey such as one from Earth to Mars. \\
+The dose grows stronger as one gets further away from the Earth as its magnetosphere grows weaker and its atmosphere thinner the further away one gets from it.
+As for Mars, who lacks a strong magnetosphere such as Earth's, it does have a CO2 atmosphere which shields it from space born radiations, though less than Earth's thicker atmosphere.\\
+The unprotected human body is quite vulnerable to radiation, long term exposure and accumulation of radiations can lead to sever health effects \citep{baumstark2002life}.\\
+
+Although the legislation is lacking for space 
+ the IAEA, the UN legislative body, specifies a dose of $20mSv$ per year averaged over five consecutive years (100 mSv in 5 years) and of $50mSv$ in any single year for occupational workers \citep{IAEA-GSG}. A quantity well under was is proposed by \citep{Hoffman1997} as can be observed in figure 1.4. 
 
 \begin{figure}[hbtp]
 \centering
@@ -130,52 +130,138 @@ Flight Center Conceptual Image Lab, GCR image credit: NASA/STScI/CXC/SAO, proces
 Studio.}
 \end{figure}
 
+\newpage
+
+The mean energy loss (stopping power) for a fast charged particle with speed $v$, charge $z$, and energy $E$, traveling a distance $x$ into a target of electron number density $n$ and mean excitation energy $I$, the relativistic version of the formula reads, in SI units is \citep{groom2000passage} :
+\begin{equation}
+- \left\langle \frac{dE}{dx} \right\rangle = \frac{4\pi}{m_e c^2} \cdot \frac{n z^2}{\beta^2} \cdot \left(\frac{e^2}{4\pi \epsilon_0}\right)^2 \left[ \ln\left( \frac{2 m_e c^2 \beta^2}{I\cdot (1-\beta^2)} \right) - \beta^2 \right]
+\end{equation}
+
+Where: 
+\\
+- $m_e$ the electron resting mass\\
+- $c$ the speed of light in vacuum\\
+- $e$ the electron charge\\
+- $\epsilon_0$ the vacuum permittivity\\
+- $\beta=\frac{v}{c}$\\
+- $n=\frac{N_a\cdot Z \cdot \rho}{A\cdot M_u}$\\
+
+This report will make use of NIST's tool, PSTAR \citep{STAR}.
+\\
+With a default option, PSTAR generate the stopping powers and ranges for protons tabulated in ICRU Report 49 \citep{deasy1994icru} for 74 materials at a standard grid of 133 kinetic energies between 1 keV and 10 GeV for protons.
 
 
 
-\begin{minipage}[a]{0.5\linewidth}
+\vspace{2cm}
+
+\begin{minipage}[b]{0.5\linewidth}
 \centering
-\includegraphics[scale=.4]{img/optimised traj.png}
-\captionof{figure}{Typical fast-transit trajectory courtesy of \cite{Hoffman1997}}
+\includegraphics[width=1\textwidth]{img/optimised traj.png}
+\captionof{figure}{Typical fast-transit trajectory courtesy of \citep{Hoffman1997}}
 \end{minipage} 
 \hfill
 \begin{minipage}[b]{0.35\linewidth}
-In space, astronauts are exposed to three main kind of radiation environments, SEP, GCR and trapped radiations. For our purpose we will mainly focus on SEP and GCR radiations as the time spent around the earth and in the Van-Allen belt will be insignificant compared to the whole duration of the mission as highlighted in figure 1.6.
+In space, astronauts are exposed to three main kind of radiation environments, SEP, GCR and trapped radiations. For our purpose we will mainly focus on SEP and GCR radiations as the time spent around the Earth and in the Van-Allen belt will be insignificant compared to the whole duration of the mission as highlighted in figure 4.1.
+\end{minipage}
+
+
+
+\newpage
+\begin{minipage}[b]{0.35\linewidth}
+\subsection{SEPs}
+SEP are high energy charged particles originating in the solar atmosphere and transported by solar winds. They are mostly composed of high energy protons as reported in \citep{Jiggens2019}. Figure 1.5 shows the energy spectra from the 1989 solar event that resulted in a complete blackout of Hydro-Québec's power grid.
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\includegraphics[width=1\textwidth]{img/proton flux 1989.png}
+\captionof{figure}{The energy spectrum of the 9-13th of march 1989 solar storm}
+\end{minipage} \\
+\hfill\\
+
+
+
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\includegraphics[width=1\textwidth]{img/Cosmic_ray_flux_versus_particle_energy.svg.png}
+\captionof{figure}{Cosmic Flux Versus Particle Energy At The Top Of Earth's Atmosphere \citep{Sharma2008}}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.35\linewidth}
+\subsection{GCRs}
+CGR are high energy particles mostly composed of protons and HZE ions, some of them come from our sun but from our galaxy and other galaxies as well. The bulk of the flux is deflected to space by the heliosphere. Therefor, the solar cycle and thus the strength of the sun's magnetic sphere has a major influence on the influx of GCRs.
+Solar maximums and minimums, the time where the sun's activity is respectively at its maximum and its minimum will play a big role in how we deal with GCRs.
 \end{minipage}
 
 \newpage
 
-\subsubsection{SEPs}
+\subsection{Dosimetry}
 
-\begin{minipage}[b]{0.45\linewidth}
-SEP are high energy charged particles originating in the solar atmosphere and transported by solar winds. They are mostly composed of high energy protons as reported in \cite{Jiggens2019}. Figure 1.7 shows the energy spectra from the 1989 solar event that resulted in a complete blackout of Hydro-Québec's power grid.
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.45\linewidth}
-\centering
-\includegraphics[scale=.2]{img/proton flux 1989.png}
-\captionof{figure}{9-13th of March 1989 Solar storm}
-\end{minipage} 
+\subsubsection{Absorbed Dose}
+
+Absorbed dose is a dose quantity which represents the specific energy (energy per unit mass) deposited by ionizing radiation in living matter.
+
+\begin{equation}
+\bar{D_T}=\frac{\int_TD(x,y,z)\rho(x,y,z)dV}{\int_T\rho(x,y,z)dV} \quad (Gy)
+\end{equation}
+
+Where:
+\\
+- $\bar{D_T}$ is the mass-averaged absorbed dose of the entire item $T$\\
+- $T$ is the item of interest\\
+- $D(x,y,z)$ is the absorbed dose density (absorbed dose per unit volume) as a function of location\\
+- $\rho(x,y,z)$ is the density (mass per unit volume) as a function of location\\
+- $V$ is volume
 
 
-\subsubsection{GCRs}
 
-CGR are high energy particles mostly composed of protons and HZE ions, some of them come from our sun but from our galaxy and other galaxies as well. The bulk of the flux is deflected to space by the heliosphere. 
+\subsubsection{Equivalent Dose}
+
+\quad Equivalent dose is a dose quantity representing the stochastic health effects of low levels of ionizing radiation on the human body which represents the probability of radiation-induced cancer and genetic damage.
+
+\begin{equation}
+H_{T}=\sum _{R}W_{R}\cdot D_{T,R} \quad (Sv)
+\end{equation}
+
+Where:\\
+- $W_R$ is the radiation weighting factor defined by regulation \citep{valentin20072007}. See Figure 4.3 for the values of $W_R$.
+
+
+\subsubsection{Effective Dose}
+
+\quad Effective dose is a dose quantity in the International Commission on Radiological Protection (ICRP) system of radiological protection. It is a good measure of the health risks associated with radiations \citep{protection2007icrp}.
+
+\begin{equation}
+E=\sum _{T}W_{T}\cdot H_{T}=\sum _{T}W_{T}\sum _{R}W_{R}\cdot {\frac {\displaystyle \int _{T}D_{R}(x,y,z)\rho (x,y,z)dV}{\displaystyle \int _{T}\rho (x,y,z)dV}}
+\end{equation}
+
+Where:\\
+- $W_{R}$ is the radiation weighting factor defined by regulation. See Figure 4.4.
+
+\newpage
+
+\chapter{Results}
+%provides raw (i.e., uninterpreted) data collected (perhaps) expresses the data in table form, as an easy-to-read figure, or as percentages/ratios
+
+\section{Propulsion}
+\subsection{Nuclear Propulsion}
+Here we compare the difference in the fuel to dry mass ratio when using different technologies using Eq 1.3 and taking a $\Delta v$ of 5543 m.s-1, accounting for the use of the nuclear engine as the transfer engine, ie. the rocket would be sent to space and would land using chemical engines and the NTR would only be fired from LEO to LMO.
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=.5]{img/Cosmic_ray_flux_versus_particle_energy.svg.png}
-\caption{Cosmic flux versus particle energy at the top of Earth's atmosphere \cite{Sharma2008}}
+\includegraphics[width=0.8\textwidth]{img/ratio.png}
+\caption{Ratio of fuel to dry mass relative to Isp for a typical Earth-Mars mission}
 \end{figure}
 
+\newpage
+
+Liquid hydrogen is a propellant of choice due to its low molecular weight, which allows for high $I_{sp}$ as well as its low neutron absorbing cross section. Solid core NTR design operate at around 2000°C which in conjunction with the use of hydrogen yield specific impulses approaching 1000s. The design is limited by the containment chamber's wall melting. Some newer design, such as gas core NTRs could yield specific impulses in the 3000s.
+
+\newpage
+\section{Radiation in Space}
+\subsection{Shielding}
 
 
-
-\chapter{Results}
-%provides raw (i.e., uninterpreted) data collected 	(perhaps) expresses the data in table form, as an easy-to-read figure, or as percentages/ratios
-
-\section{Nuclear Propulsion}
-\section{Shielding}
 
 
 \chapter{Discussion}
@@ -185,4 +271,33 @@ CGR are high energy particles mostly composed of protons and HZE ions, some of t
 \input{acronyms}
 
 \bibliography{references}
+
+\chapter{Appendix}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=1\textwidth]{img/extrapo.png}
+\caption{Mission exposures derived by scaling daily values from Figure 4.2 by corresponding mission segment duration, from \citep{Hoffman1997}}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=1\textwidth]{img/data.png}
+\caption{Daily exposure within 0, 20, and 40 g/cm2 spherical aluminum shielding in free space and on surface of Moon and Mars for solar minimum (2009) and solar maximum (2001) GCR conditions, from \citep{Hoffman1997}}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=1\textwidth]{img/Wr.png}
+\caption{Radiation weighting factors $W_R$ used to represent relative biological effectiveness according to ICRP report \citep{valentin20072007}}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=1\textwidth]{img/Wh.png}
+\caption{Weighting factors ($W_H$) for different tissues}
+\end{figure}
+
+
+
 \end{document}
