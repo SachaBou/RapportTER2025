@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.8)  12 JUN 2025 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.8)  12 JUN 2025 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,7 +1189,7 @@ Package rerunfilecheck Info: File `"Internship Report BOURGEOIS Sacha".brf' has
 Here is how much of TeX's memory you used:
  14652 strings out of 469922
  242491 string characters out of 5469150
- 735377 words of memory out of 5000000
+ 734377 words of memory out of 5000000
  41183 multiletter control sequences out of 15000+600000
  638094 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1211,7 +1211,7 @@ s/cm/cmr17.pfb><C:/Users/Sacha/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /public/amsfonts/cm/cmsy10.pfb><C:/Users/Sacha/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Sacha/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Internship Report BOURGEOIS Sacha.pdf" (28 pages, 5707130 by
+Output written on "Internship Report BOURGEOIS Sacha.pdf" (28 pages, 5707122 by
 tes).
 PDF statistics:
  447 PDF objects out of 1000 (max. 8388607)
